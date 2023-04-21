@@ -690,6 +690,13 @@ const sourcifyChainsExtensions: SourcifyChainsExtensionsObject = {
     contractFetchAddress: "https://goerli.basescan.org/" + ETHERSCAN_SUFFIX,
     txRegex: ETHERSCAN_REGEX,
   },
+  "13381": {
+    supported: true,
+    monitored: false,
+    contractFetchAddress: "https://phoenixplorer.com//" + BLOCKSCOUT_SUFFIX,
+    rpc: ["https://rpc.phoenixplorer.com"],
+    txRegex: getBlockscoutRegex(),
+  },
 };
 
 const sourcifyChainsMap: SourcifyChainMap = {};
